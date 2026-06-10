@@ -139,6 +139,19 @@
       font-size: 0.9rem;
     }
 
+    .li-text a {
+      color: #d4d0c8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(212, 208, 200, 0.5);
+      -webkit-text-fill-color: #d4d0c8;
+    }
+
+    .li-text a:hover {
+      color: #e8e6e1;
+      -webkit-text-fill-color: #e8e6e1;
+    }
+
   </style>
 </head>
 <body>
@@ -160,6 +173,7 @@
       <li>Researched economic shock propagation using Leontief matrix analysis at GWU</li>
       <li>Selected as a ChatGPT Futures Honoree, Pete Conrad Scholar, and Emergent Ventures Grantee</li>
       <li>Won the YIS Global Stock Pitch Competition and placed 3rd in the Wharton Investment Competition</li>
+      <li>Featured on <a href="https://wtop.com/fairfax-county/2025/11/left-behind-fairfax-co-high-schooler-warns-seniors-about-online-financial-scams/" target="_blank" rel="noopener">WTOP</a>, <a href="https://annandaletoday.com/student-helps-seniors-avoid-financial-scams/" target="_blank" rel="noopener">Annandale Today</a>, and <a href="https://www.loudounnow.com/news/grant-opportunity-for-loudoun-students-by-loudoun-students/article_73d93bb6-cd25-11ef-b1e3-97d32b658629.html" target="_blank" rel="noopener">LoudounNow</a></li>
     </ul>
 
     <p class="reveal reveal-4">Feel free to reach out!</p>
@@ -193,8 +207,8 @@
     document.querySelectorAll('ul li').forEach(li => {
       const span = document.createElement('span');
       span.className = 'li-text';
-      span.textContent = li.textContent;
-      li.textContent = '';
+      span.innerHTML = li.innerHTML;
+      li.innerHTML = '';
       li.appendChild(span);
     });
 
