@@ -34,40 +34,10 @@
       font-size: 14px;
       line-height: 1.65;
       min-height: unset;
-      cursor: none;
-    }
-
-    * { cursor: none !important; }
-
-    #cursor {
-      position: fixed;
-      top: 0; left: 0;
-      width: 22px; height: 26px;
-      pointer-events: none;
-      z-index: 9999;
-      will-change: transform;
-      filter: drop-shadow(0 2px 5px rgba(122, 144, 196, 0.25));
-      transition: filter 0.2s ease, transform 0.1s ease;
-    }
-
-    #cursor.on-text {
-      filter: drop-shadow(0 2px 8px rgba(122, 144, 196, 0.45));
-    }
-
-    h1 .char {
-      display: inline;
-      transition: color 0.35s ease, text-shadow 0.35s ease;
-    }
-
-    main > p, .li-text {
-      background: radial-gradient(ellipse 100px 2.8em at var(--gx, -999px) var(--gy, 50%), #7a90c4 0%, #d4d0c8 55%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
     }
 
     main {
-      max-width: 760px;
+      max-width: 776px;
       margin: 0 auto;
       padding: 52px 24px 40px;
     }
@@ -139,17 +109,16 @@
       font-size: 0.9rem;
     }
 
-    .li-text a {
+    .work-link {
       color: #d4d0c8;
-      text-decoration: underline;
+      text-decoration: underline dashed;
       text-underline-offset: 3px;
       text-decoration-color: rgba(212, 208, 200, 0.5);
-      -webkit-text-fill-color: #d4d0c8;
     }
 
-    .li-text a:hover {
-      color: #e8e6e1;
-      -webkit-text-fill-color: #e8e6e1;
+    .work-link:hover, .work-link:focus-visible {
+      color: #99aed6;
+      text-decoration-color: currentColor;
     }
 
   </style>
@@ -159,20 +128,30 @@
     <h1 class="reveal reveal-1">Arhan Menta</h1>
 
     <p class="reveal reveal-2">
-      I'm studying Economics &amp; Computer Science at Vanderbilt University as a Cornelius Vanderbilt Scholar (full-tuition merit scholarship) focused on the intersection of investing and tech.
+      I'm studying Economics &amp; Computer Science at Vanderbilt University as a Cornelius Vanderbilt Scholar (full-tuition merit scholarship, &lt;1% acceptance rate) focused on the intersection of investing and tech.
     </p>
 
     <div class="section-label reveal reveal-3">My Work</div>
 
     <ul class="reveal reveal-3">
-      <li>Built a venture-backed deep-tech startup, receiving $50K+ in grants</li>
-      <li>Founded a scam prevention nonprofit that reached 3.8K+ seniors across 3 countries and 8 chapters</li>
-      <li>Lobbied for state-level financial crime legislation</li>
-      <li>Created a microgrant fund that backed 50+ student builders</li>
-      <li>Organized a regional startup competition serving 5+ Northern Virginia counties</li>
-      <li>Researched economic shock propagation using Leontief matrix analysis at GWU</li>
-      <li>Selected as a ChatGPT Futures Honoree, Pete Conrad Scholar, and Emergent Ventures Grantee</li>
-      <li>Won the YIS Global Stock Pitch Competition and placed 3rd in the Wharton Investment Competition</li>
+      <li><span>Sourcing $1&ndash;3M pre-seed to Series A investments at <a class="work-link" href="https://collidecap.com" target="_blank" rel="noopener">Collide Capital</a> ($170M AUM)</span></li>
+      <li><span>Built a <a class="work-link" href="https://www.wifind.tech" target="_blank" rel="noopener">hardware startup</a> at <a class="work-link" href="https://f.inc" target="_blank" rel="noopener">Founders, Inc.</a> accelerator, received $50K+ in grants</span></li>
+      <li><span>Worked on machine learning for AI-generated chip designs at a YC-backed startup</span></li>
+      <li><span>Created a <a class="work-link" href="https://cactuscapital.org" target="_blank" rel="noopener">microgrant fund</a> backing 50+ student builders, $400K follow-on funding</span></li>
+      <li><span>Led the first entirely high school-run <a class="work-link" href="https://innovatetj.org/html/index.html" target="_blank" rel="noopener">startup incubator</a>, served 5+ VA counties</span></li>
+      <li><span>Lobbied for state-level financial crime legislation at Virginia State Capitol</span></li>
+      <li><span>Researched economic shock propagation using Leontief matrix analysis at GWU</span></li>
+    </ul>
+
+    <div class="section-label reveal reveal-3">Awards</div>
+
+    <ul class="reveal reveal-3">
+      <li><span><a class="work-link" href="https://chatgpt.com/futures/#wi-find" target="_blank" rel="noopener">ChatGPT Futures Honoree</a> (selected by OpenAI as 1/26 emerging AI leaders, met <a class="work-link" href="https://x.com/sama" target="_blank" rel="noopener">@sama</a>)</span></li>
+      <li><span><a class="work-link" href="https://conrad.spacecenter.org/2025-winners/" target="_blank" rel="noopener">Pete Conrad Scholar</a> (1st Place in Conrad Challenge, pitched @ Space Center Houston)</span></li>
+      <li><span>Invited to showcase at the <a class="work-link" href="https://www.ces.tech" target="_blank" rel="noopener">Consumer Electronics Show</a> (alongside Samsung and NVIDIA)</span></li>
+      <li><span>1st Place @ <a class="work-link" href="https://yis.org/programs/stock-pitch-competition/" target="_blank" rel="noopener">Young Investors Society Global Stock Pitch Competition</a> (awarded $5k)</span></li>
+      <li><span>3rd Place @ <a class="work-link" href="https://globalyouth.wharton.upenn.edu/news/spark-investments-bergen-county-academies-new-jersey-bring-the-heat-to-the-2024-investment-competition-global-finale/" target="_blank" rel="noopener">Wharton Investment Competition</a> (2x finalist, 2x team captain)</span></li>
+      <li><span>2x <a class="work-link" href="https://diamondchallenge.org" target="_blank" rel="noopener">Diamond Challenge</a> Finalist (top 5% of pitches, received $2K in prizes)</span></li>
     </ul>
 
     <p class="reveal reveal-4">Feel free to reach out!</p>
@@ -185,84 +164,5 @@
     </footer>
   </main>
 
-  <svg id="cursor" viewBox="0 0 22 26" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3 2 L3 21 L7.5 16 L11 23.5 L13.5 22.3 L10 15 L17 15 Z"
-          fill="#7a90c4" rx="2"/>
-  </svg>
-
-  <script>
-    const cursor = document.getElementById('cursor');
-    let mx = -100, my = -100, cx = -100, cy = -100;
-
-    // h1: char-by-char spans
-    const h1 = document.querySelector('h1');
-    h1.innerHTML = h1.textContent.split('').map(c =>
-      c === ' ' ? '<span class="char" style="display:inline-block;width:0.38em"></span>'
-               : `<span class="char">${c}</span>`
-    ).join('');
-    const h1Chars = Array.from(h1.querySelectorAll('.char'));
-
-    // wrap li text in span so background-clip works (flex breaks it on the li itself)
-    document.querySelectorAll('ul li').forEach(li => {
-      const span = document.createElement('span');
-      span.className = 'li-text';
-      span.innerHTML = li.innerHTML;
-      li.innerHTML = '';
-      li.appendChild(span);
-    });
-
-    const bodyEls = [
-      ...Array.from(document.querySelectorAll('main > p')),
-      ...Array.from(document.querySelectorAll('.li-text'))
-    ];
-
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-    document.addEventListener('mouseleave', () => { mx = -100; my = -100; });
-
-    const textEls = document.querySelectorAll('p, li, h1, a');
-    textEls.forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('on-text'));
-      el.addEventListener('mouseleave', () => cursor.classList.remove('on-text'));
-    });
-
-    function lerp(a, b, t) { return a + (b - a) * t; }
-
-    (function loop() {
-      cx = lerp(cx, mx, 0.16);
-      cy = lerp(cy, my, 0.16);
-      cursor.style.transform = `translate(${cx}px, ${cy}px)`;
-
-      // h1 char glow
-      const h1Rect = h1.getBoundingClientRect();
-      if (my >= h1Rect.top - 8 && my <= h1Rect.bottom + 8 && mx > 0) {
-        h1Chars.forEach(char => {
-          const r = char.getBoundingClientRect();
-          const t = Math.max(0, 1 - Math.abs(mx - (r.left + r.width / 2)) / 55);
-          const red   = Math.round(232 + (122 - 232) * t);
-          const green = Math.round(230 + (144 - 230) * t);
-          const blue  = Math.round(225 + (196 - 225) * t);
-          char.style.color = `rgb(${red},${green},${blue})`;
-          char.style.textShadow = t > 0.05
-            ? `0 0 ${10*t}px rgba(122,144,196,${t}),0 0 ${30*t}px rgba(122,144,196,${0.85*t}),0 0 ${60*t}px rgba(100,120,180,${0.5*t})`
-            : 'none';
-        });
-      } else {
-        h1Chars.forEach(c => { c.style.color = ''; c.style.textShadow = ''; });
-      }
-
-      // body text gradient spotlight
-      bodyEls.forEach(el => {
-        const r = el.getBoundingClientRect();
-        if (my >= r.top - 8 && my <= r.bottom + 8 && mx > 0) {
-          el.style.setProperty('--gx', (mx - r.left) + 'px');
-          el.style.setProperty('--gy', (my - r.top) + 'px');
-        } else {
-          el.style.setProperty('--gx', '-999px');
-        }
-      });
-
-      requestAnimationFrame(loop);
-    })();
-  </script>
 </body>
 </html>
